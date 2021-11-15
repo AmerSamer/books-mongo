@@ -6,7 +6,7 @@ require('dotenv').config()
 const mongoose = require('mongoose');
 // const itemsModel = require('./models/Items.model').itemsModel;
 
-// app.use(bodyParser.json());
+// app.use(bodyParser.json());;
 // app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(cors());
