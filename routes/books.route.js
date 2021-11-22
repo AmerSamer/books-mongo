@@ -13,6 +13,10 @@ router.get('/', (req, res) => {
     booksController.getAllBooksByYear(req, res);
 }).put('/:id', (req, res) => {
     booksController.updateBook(req, res);
+}).post('/author', (req, res) => {
+    booksController.createAuthor(req, res);
+}).delete('/deleteAuthor/:id', (req, res) => {
+    booksController.deleteAuthor(req, res);
 })
 
 module.exports = router;
